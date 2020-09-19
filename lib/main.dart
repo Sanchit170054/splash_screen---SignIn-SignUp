@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -9,9 +10,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-      brightness: Brightness.dark,
-      primaryColor: Colors.lightBlue[800],
-      accentColor: Colors.white,
+        brightness: Brightness.dark,
+        primaryColor: Colors.lightBlue[800],
+        accentColor: Colors.white,
       ),
       home: SplashScreenPage(),
       debugShowCheckedModeBanner: false,
@@ -42,10 +43,12 @@ class SecondScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title:Text("Home Screen")),
+      appBar: AppBar(title: Text("Home Screen")),
       body: Center(
-        child:Text("Home page",textScaleFactor: 2,)
-      ),
+          child: Text(
+        "Home page",
+        textScaleFactor: 2,
+      )),
     );
   }
 }
