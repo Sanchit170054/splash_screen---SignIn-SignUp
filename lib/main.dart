@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:splash_screen/login.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 void main() {
@@ -25,7 +26,7 @@ class SplashScreenPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SplashScreen(
       seconds: 5,
-      navigateAfterSeconds: new SecondScreen(),
+      navigateAfterSeconds: new LoginPage(),
       backgroundColor: Colors.black,
       title: new Text('Welcome to MoviSic',
           textScaleFactor: 2,
