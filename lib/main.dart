@@ -46,7 +46,7 @@ class SecondScreen extends StatelessWidget {
       appBar: AppBar(title: Text("Home Screen")),
       body: Center(
           child: Text(
-        "Home page",
+        "Sample Page",
         textScaleFactor: 2,
       )),
     );
